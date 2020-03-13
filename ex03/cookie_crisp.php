@@ -1,7 +1,6 @@
 <?php
 if ($_GET['action'] === 'set')
 {
-	echo "set\n";
 	if ($_GET['name'] && $_GET['value'])
 		setcookie($_GET['name'], $_GET['value'], time() + (60 * 30));
 }
